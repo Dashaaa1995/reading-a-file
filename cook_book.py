@@ -28,7 +28,7 @@ def create_cook_book(file_name):
         return cook_book
 
     except FileNotFoundError:
-        return(f'Файл: {input_file_name} не найден.')
+        return(f'Файл: {file_name} не найден.')
     except Exception as error:
         return f'Ошибка - {error}'
 
